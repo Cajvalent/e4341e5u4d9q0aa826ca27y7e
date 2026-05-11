@@ -198,7 +198,7 @@ def first():
         part2 = MIMEText(html, 'html')
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL('mail.waterworldwaterpark.com', 465) as server:
+        with smtplib.SMTP_SSL('mail.tapsas.com.co', 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email,
                             message.as_string())
